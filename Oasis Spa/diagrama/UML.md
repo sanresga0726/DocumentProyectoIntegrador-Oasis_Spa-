@@ -6,23 +6,15 @@ class Person {
     +String name
     +String gender
     +int age
-    +create()
-    +selectById(id)
-    +selectAll()
-    +update()
-    +deleteById(id)
 }
 
 class Customer {
     +String phone
     +String address
-    +showOptions()
 }
 
 class Employee {
     +int serviceId
-    +showOptions()
-    +assignService(serviceId)
 }
 
 class ContactMessage {
@@ -46,7 +38,6 @@ class Payment {
     +int id
     +double amount
     +Date paymentDate
-    +PaymentMethod paymentMethod
     +String status
 }
 
@@ -84,16 +75,16 @@ Person <|-- Customer
 Person <|-- Employee
 
 Customer "1" --> "*" Reservation : makes
-Reservation "*" --> "1" Service : is for
+Reservation "*" --> "1" Service : is_for
 
 Employee "1" --> "1..*" Service : manages
-Customer --> E*ployee : assigned to
+Customer "0..*" --> "0..1" Employee : assigned_to
 
-Reservation *1" *-- "1" Payment : pays
-Payment *.> PaymentMethod : uses
+Customer "0..1" --> "0..*" ContactMessage : sends
 
-Product*"*" --> "0..*" Service : uses
-Product "1" *-- "*" Inventory : registered in
+Payment *-> PaymentMethod : uses
+Payment "*" --> "*" Reservation : pays
 
-Custo*er "0..1" --> "0..*" ContactMessage : sends
+Product "*..*" --> "0..*" Service : uses
+Product "*" --> "1" Inventory : registered_i*
 ```
