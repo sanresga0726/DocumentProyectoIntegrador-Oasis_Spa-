@@ -87,7 +87,7 @@ Customer "1" --> "*" Reservation : makes
 Reservation "*" --> "1" Service : is for
 
 Employee "1" --> "1..*" Service : manages
-Customer --> Employee : assigned to
+Customer --> E*ployee : assigned to
 
 Reservation *1" *-- "1" Payment : pays
 Payment *.> PaymentMethod : uses
