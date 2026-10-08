@@ -2,69 +2,68 @@
 classDiagram
 
 class Person {
-    +int id
-    +String name
-    +String gender
-    +int age
+    id : int
+    name : String
+    gender : String
+    age : int
 }
 
 class Customer {
-    +String phone
-    +String address
+    phone : String
+    address : String
 }
 
 class Employee {
-    +int serviceId
+    serviceId : int
 }
 
 class ContactMessage {
-    +int id
-    +String name
-    +String email
-    +String message
-    +Date date
-    +String status
+    id : int
+    name : String
+    email : String
+    message : String
+    date : Date
+    status : String
 }
 
 class Reservation {
-    +int id
-    +Date reservationDate
-    +String reservationTime
-    +String status
-    +String notes
+    id : int
+    reservationDate : Date
+    reservationTime : String
+    status : String
+    notes : String
 }
 
 class Payment {
-    +int id
-    +double amount
-    +Date paymentDate
-    +String status
+    id : int
+    amount : double
+    paymentDate : Date
+    status : String
 }
 
 class Service {
-    +int id
-    +String description
-    +String benefit
-    +String photo
-    +int duration
-    +String status
+    id : int
+    description : String
+    benefit : String
+    photo : String
+    duration : int
+    status : String
 }
 
 class Product {
-    +int id
-    +String name
-    +String brand
+    id : int
+    name : String
+    brand : String
 }
 
 class Inventory {
-    +int id
-    +int quantity
-    +int minimumStock
-    +Date lastUpdate
+    id : int
+    quantity : int
+    minimumStock : int
+    lastUpdate : Date
 }
 
 class PaymentMethod {
-    <<enumeration>>
     CASH
     BANK_TRANSFER
     CREDIT_CARD
@@ -74,17 +73,17 @@ class PaymentMethod {
 Person <|-- Customer
 Person <|-- Employee
 
-Customer "1" --> "*" Reservation : makes
-Reservation "*" --> "1" Service : is_for
+Customer --> Reservation : makes
+Reservation --> Service : is_for
 
-Employee "1" --> "1..*" Service : manages
-Customer "0..*" --> "0..1" Employee : assigned_to
+Employee --> Service : manages
+Customer --> Employee : assigned_to
 
-Customer "0..1" --> "0..*" ContactMessage : sends
+Customer --> ContactMessage : sends
 
-Payment *-> PaymentMethod : uses
-Payment "*" --> "*" Reservation : pays
+Payment --> PaymentMethod : uses
+Payment --> Reservation : pays
 
-Product "*..*" --> "0..*" Service : uses
-Product "*" --> "1" Inventory : registered_i*
+Product --> Service : uses
+Product --> Inventory : registered_in
 ```
