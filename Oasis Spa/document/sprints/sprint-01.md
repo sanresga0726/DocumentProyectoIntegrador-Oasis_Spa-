@@ -1,1 +1,0 @@
-fijador de carpeta
