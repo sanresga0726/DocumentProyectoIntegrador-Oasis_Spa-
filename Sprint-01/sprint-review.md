@@ -20,7 +20,7 @@ Desarrollar la estructura base de la aplicación mediante la implementación de 
 
 #### Resultado
 
-Se elaboró correctamente el archivo `UML.pdf`, donde se definieron las entidades principales del sistema y sus relaciones.
+Se elaboró correctamente el archivo `models.js`, donde se definieron las entidades principales del sistema y sus relaciones.
 
 El diagrama UML incluyó las siguientes clases:
 
