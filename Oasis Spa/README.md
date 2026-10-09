@@ -22,7 +22,7 @@ Sistema de gestión para Oasis Spa que permita administrar:
 | Jefferson S. Restrepo | Product Owner |
 | Tifanny M. Arroyave | Scrum Master |
 | Santiago Restrepo | Developer |
-| Nombre Apellido | Developer |
+| Juan S. Montoya | Developer |
 
 ## Metodología Utilizada
 El proyecto se desarrolla bajo el marco de trabajo Scrum:
