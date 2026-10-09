@@ -31,7 +31,7 @@ Construir la base estructural de la aplicación mediante la creación de las cla
 
 **Entregable:**
 
-- Archivo `UML.pdf`
+- Archivo `models.js`
 
 ---
 
@@ -96,7 +96,12 @@ Construir la base estructural de la aplicación mediante la creación de las cla
 ### Integrante 1 - Modelos UML
 
 - Crear rama `feature/modelos-uml`.
-- Crear archivo `UML.pdf`.
+- Crear archivo `models.js`.
+- Implementar clase `Servicio`.
+- Implementar clase `Cliente`.
+- Implementar clase `Pago`.
+- Implementar clase `Reserva`.
+- Validar funcionamiento de las clases.
 - Realizar commit y push al repositorio.
 
 ---
@@ -119,15 +124,10 @@ Construir la base estructural de la aplicación mediante la creación de las cla
 - Crear rama `feature/controlador-ui o mi-primera-rama-formulario-pago`.
 - Crear archivo `java.js`.
 - Implementar clase `AppSpa`.
-- Implementar clase `Servicio`.
-- Implementar clase `Cliente`.
-- Implementar clase `Pago`.
-- Implementar clase `Reserva`.
 - Configurar captura de eventos del DOM.
 - Preparar integración con los modelos.
 - Preparar integración con LocalStorage.
 - Realizar pruebas iniciales.
-- Validar funcionamiento de las clases.
 - Realizar commit y push al repositorio.
 
 ---
@@ -146,7 +146,7 @@ Construir la base estructural de la aplicación mediante la creación de las cla
 
 Al finalizar el Sprint 1 se espera contar con:
 
-- Una estructura de modelos funcional en `UML.pdf`.
+- Una estructura de modelos funcional en `models.js`.
 - Un sistema de persistencia local implementado en `Datos.js`.
 - Un controlador base desarrollado en `java.js`.
 - Una arquitectura modular preparada para la integración de funcionalidades en los siguientes sprints.
