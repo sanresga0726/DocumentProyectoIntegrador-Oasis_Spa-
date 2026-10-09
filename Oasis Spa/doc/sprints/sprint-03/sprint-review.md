@@ -33,7 +33,7 @@
 ---
 
 ## 3. Demostración y Feedback de Stakeholders
-* **Demostración:** Se realizó la demostración del flujo completo desde la toma de datos del usuario, selección de servicio, aplicación de descuento, pago del 50% y generación de la reserva.
+* **Demostración:** Se realizó la demostración del medio de pagos y reservas llevando informacion correctamente 
 * **Retroalimentación recibida:**
   * El flujo de reserva es intuitivo y cumple con los requerimientos.
   * Se sugiere en futuros desarrollos enviar un correo de recordatorio 24 horas antes de la cita.
