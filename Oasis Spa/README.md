@@ -40,12 +40,12 @@ El proyecto se desarrolla bajo el marco de trabajo Scrum:
 
 ```text
 🍃 Oasis-Spa
-├── Documentacion
-│   ├── Historias_Usuario
+├── Doc
+│   ├── diagrama
 │   ├── Product_Backlog
+│   ├── user-stories
 │   └── Sprints
 ├── Evidencias
-├── Diagramas
 └── README.md
 ```
 
